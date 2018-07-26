@@ -1,0 +1,1208 @@
+/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ main,
+ nav,
+ section,
+ summary {
+     display: block;
+ }
+ 
+ /**
+  * Correct `inline-block` display not defined in IE 8/9.
+  */
+ 
+ audio,
+ canvas,
+ video {
+     display: inline-block;
+ }
+ 
+ /**
+  * Prevent modern browsers from displaying `audio` without controls.
+  * Remove excess height in iOS 5 devices.
+  */
+ 
+ audio:not([controls]) {
+     display: none;
+     height: 0;
+ }
+ 
+ /**
+  * Address styling not present in IE 8/9.
+  */
+ 
+ [hidden] {
+     display: none;
+ }
+ 
+ /* ==========================================================================
+    Base
+    ========================================================================== */
+ 
+ /**
+  * 1. Prevent system color scheme's background color being used in Firefox, IE,
+  *    and Opera.
+  * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+  *    Opera.
+  * 3. Set default font family to sans-serif.
+  * 4. Prevent iOS text size adjust after orientation change, without disabling
+  *    user zoom.
+  */
+ 
+ html {
+     background: #fff; /* 1 */
+     color: #000; /* 2 */
+     font-family: sans-serif; /* 3 */
+     -ms-text-size-adjust: 100%; /* 4 */
+     -webkit-text-size-adjust: 100%; /* 4 */
+ }
+ 
+ /**
+  * Remove default margin.
+  */
+ 
+ body {
+     margin: 0;
+ }
+ 
+ /* ==========================================================================
+    Links
+    ========================================================================== */
+ 
+ /**
+  * Address `outline` inconsistency between Chrome and other browsers.
+  */
+ 
+ a:focus {
+     outline: thin dotted;
+ }
+ 
+ /**
+  * Improve readability when focused and also mouse hovered in all browsers.
+  */
+ 
+ a:active,
+ a:hover {
+     outline: 0;
+ }
+ 
+ /* ==========================================================================
+    Typography
+    ========================================================================== */
+ 
+ /**
+  * Address variable `h1` font-size and margin within `section` and `article`
+  * contexts in Firefox 4+, Safari 5, and Chrome.
+  */
+ 
+ h1 {
+     font-size: 2em;
+     margin: 0.67em 0;
+ }
+ 
+ /**
+  * Address styling not present in IE 8/9, Safari 5, and Chrome.
+  */
+ 
+ abbr[title] {
+     border-bottom: 1px dotted;
+ }
+ 
+ /**
+  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+  */
+ 
+ b,
+ strong {
+     font-weight: bold;
+ }
+ 
+ /**
+  * Address styling not present in Safari 5 and Chrome.
+  */
+ 
+ dfn {
+     font-style: italic;
+ }
+ 
+ /**
+  * Address differences between Firefox and other browsers.
+  */
+ 
+ hr {
+     -moz-box-sizing: content-box;
+     box-sizing: content-box;
+     height: 0;
+ }
+ 
+ /**
+  * Address styling not present in IE 8/9.
+  */
+ 
+ mark {
+     background: #ff0;
+     color: #000;
+ }
+ 
+ /**
+  * Correct font family set oddly in Safari 5 and Chrome.
+  */
+ 
+ code,
+ kbd,
+ pre,
+ samp {
+     font-family: monospace, serif;
+     font-size: 1em;
+ }
+ 
+ /**
+  * Improve readability of pre-formatted text in all browsers.
+  */
+ 
+ pre {
+     white-space: pre-wrap;
+ }
+ 
+ /**
+  * Set consistent quote types.
+  */
+ 
+ q {
+     quotes: "\201C" "\201D" "\2018" "\2019";
+ }
+ 
+ /**
+  * Address inconsistent and variable font size in all browsers.
+  */
+ 
+ small {
+     font-size: 80%;
+ }
+ 
+ /**
+  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+  */
+ 
+ sub,
+ sup {
+     font-size: 75%;
+     line-height: 0;
+     position: relative;
+     vertical-align: baseline;
+ }
+ 
+ sup {
+     top: -0.5em;
+ }
+ 
+ sub {
+     bottom: -0.25em;
+ }
+ 
+ /* ==========================================================================
+    Embedded content
+    ========================================================================== */
+ 
+ /**
+  * Remove border when inside `a` element in IE 8/9.
+  */
+ 
+ img {
+     border: 0;
+ }
+ 
+ /**
+  * Correct overflow displayed oddly in IE 9.
+  */
+ 
+ svg:not(:root) {
+     overflow: hidden;
+ }
+ 
+ /* ==========================================================================
+    Figures
+    ========================================================================== */
+ 
+ /**
+  * Address margin not present in IE 8/9 and Safari 5.
+  */
+ 
+ figure {
+     margin: 0;
+ }
+ 
+ /* ==========================================================================
+    Forms
+    ========================================================================== */
+ 
+ /**
+  * Define consistent border, margin, and padding.
+  */
+ 
+ fieldset {
+     border: 1px solid #c0c0c0;
+     margin: 0 2px;
+     padding: 0.35em 0.625em 0.75em;
+ }
+ 
+ /**
+  * 1. Correct `color` not being inherited in IE 8/9.
+  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+  */
+ 
+ legend {
+     border: 0; /* 1 */
+     padding: 0; /* 2 */
+ }
+ 
+ /**
+  * 1. Correct font family not being inherited in all browsers.
+  * 2. Correct font size not being inherited in all browsers.
+  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+  */
+ 
+ button,
+ input,
+ select,
+ textarea {
+     font-family: inherit; /* 1 */
+     font-size: 100%; /* 2 */
+     margin: 0; /* 3 */
+ }
+ 
+ /**
+  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+  * the UA stylesheet.
+  */
+ 
+ button,
+ input {
+     line-height: normal;
+ }
+ 
+ /**
+  * Address inconsistent `text-transform` inheritance for `button` and `select`.
+  * All other form control elements do not inherit `text-transform` values.
+  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+  * Correct `select` style inheritance in Firefox 4+ and Opera.
+  */
+ 
+ button,
+ select {
+     text-transform: none;
+ }
+ 
+ /**
+  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+  *    and `video` controls.
+  * 2. Correct inability to style clickable `input` types in iOS.
+  * 3. Improve usability and consistency of cursor style between image-type
+  *    `input` and others.
+  */
+ 
+ button,
+ html input[type="button"], /* 1 */
+ input[type="reset"],
+ input[type="submit"] {
+     -webkit-appearance: button; /* 2 */
+     cursor: pointer; /* 3 */
+ }
+ 
+ /**
+  * Re-set default cursor for disabled elements.
+  */
+ 
+ button[disabled],
+ html input[disabled] {
+     cursor: default;
+ }
+ 
+ /**
+  * 1. Address box sizing set to `content-box` in IE 8/9.
+  * 2. Remove excess padding in IE 8/9.
+  */
+ 
+ input[type="checkbox"],
+ input[type="radio"] {
+     box-sizing: border-box; /* 1 */
+     padding: 0; /* 2 */
+ }
+ 
+ /**
+  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+  *    (include `-moz` to future-proof).
+  */
+ 
+ input[type="search"] {
+     -webkit-appearance: textfield; /* 1 */
+     -moz-box-sizing: content-box;
+     -webkit-box-sizing: content-box; /* 2 */
+     box-sizing: content-box;
+ }
+ 
+ /**
+  * Remove inner padding and search cancel button in Safari 5 and Chrome
+  * on OS X.
+  */
+ 
+ input[type="search"]::-webkit-search-cancel-button,
+ input[type="search"]::-webkit-search-decoration {
+     -webkit-appearance: none;
+ }
+ 
+ /**
+  * Remove inner padding and border in Firefox 4+.
+  */
+ 
+ button::-moz-focus-inner,
+ input::-moz-focus-inner {
+     border: 0;
+     padding: 0;
+ }
+ 
+ /**
+  * 1. Remove default vertical scrollbar in IE 8/9.
+  * 2. Improve readability and alignment in all browsers.
+  */
+ 
+ textarea {
+     overflow: auto; /* 1 */
+     vertical-align: top; /* 2 */
+ }
+ 
+ /* ==========================================================================
+    Tables
+    ========================================================================== */
+ 
+ /**
+  * Remove most spacing between table cells.
+  */
+ 
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ 
+ .gallery .control-operator:target ~ .controls .control-button {
+   color: #ccc;
+   color: rgba(255, 255, 255, 0.4);
+ }
+ 
+ .gallery .control-button:first-of-type, .items-2 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1), .items-2 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2), .items-3 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1), .items-3 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2), .items-3 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3), .items-4 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1), .items-4 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2), .items-4 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3), .items-4 .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4), .items-5 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1), .items-5 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2), .items-5 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3), .items-5 .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4), .items-5 .control-operator:nth-of-type(5):target ~ .controls .control-button:nth-of-type(5) {
+   color: white;
+   color: rgba(255, 255, 255, 0.8);
+ }
+ 
+ .gallery .item:first-of-type {
+   position: static;
+   opacity: 1;
+ }
+ .gallery .item {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   transition: opacity 0.5s;
+ }
+ .gallery .control-operator {
+   display: none;
+ }
+ .gallery .control-operator:target ~ .item {
+   pointer-events: none;
+   opacity: 0;
+   animation: none;
+ }
+ .gallery .control-operator:target ~ .controls .control-button {
+   animation: none;
+ }
+ 
+ @keyframes controlAnimation-2 {
+   0% {
+     color: #ccc;
+     color: rgba(255, 255, 255, 0.4);
+   }
+ 
+   14.3%,
+   50% {
+     color: white;
+     color: rgba(255, 255, 255, 0.8);
+   }
+ 
+   64.3%,
+   100% {
+     color: #ccc;
+     color: rgba(255, 255, 255, 0.4);
+   }
+ }
+ 
+ @keyframes galleryAnimation-2 {
+   0% {
+     opacity: 0;
+   }
+ 
+   14.3%,
+   50% {
+     opacity: 1;
+   }
+ 
+   64.3%,
+   100% {
+     opacity: 0;
+   }
+ }
+ 
+ .items-2.autoplay .control-button {
+   animation: controlAnimation-2 14s infinite;
+ }
+ .items-2.autoplay .item {
+   animation: galleryAnimation-2 14s infinite;
+ }
+ .items-2 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-2 .control-button:nth-of-type(1),
+ .items-2 .item:nth-of-type(1) {
+   animation-delay: -2s;
+ }
+ .items-2 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-2 .control-button:nth-of-type(2),
+ .items-2 .item:nth-of-type(2) {
+   animation-delay: 5s;
+ }
+ 
+ @keyframes controlAnimation-3 {
+   0% {
+     color: #ccc;
+     color: rgba(255, 255, 255, 0.4);
+   }
+ 
+   9.5%,
+   33.3% {
+     color: white;
+     color: rgba(255, 255, 255, 0.8);
+   }
+ 
+   42.9%,
+   100% {
+     color: #ccc;
+     color: rgba(255, 255, 255, 0.4);
+   }
+ }
+ 
+ @keyframes galleryAnimation-3 {
+   0% {
+     opacity: 0;
+   }
+ 
+   9.5%,
+   33.3% {
+     opacity: 1;
+   }
+ 
+   42.9%,
+   100% {
+     opacity: 0;
+   }
+ }
+ 
+ .items-3.autoplay .control-button {
+   animation: controlAnimation-3 21s infinite;
+ }
+ .items-3.autoplay .item {
+   animation: galleryAnimation-3 21s infinite;
+ }
+ .items-3 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-3 .control-button:nth-of-type(1),
+ .items-3 .item:nth-of-type(1) {
+   animation-delay: -2s;
+ }
+ .items-3 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-3 .control-button:nth-of-type(2),
+ .items-3 .item:nth-of-type(2) {
+   animation-delay: 5s;
+ }
+ .items-3 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-3 .control-button:nth-of-type(3),
+ .items-3 .item:nth-of-type(3) {
+   animation-delay: 12s;
+ }
+ 
+ @keyframes controlAnimation-4 {
+   0% {
+     color: #ccc;
+     color: rgba(255, 255, 255, 0.4);
+   }
+ 
+   7.1%,
+   25% {
+     color: white;
+     color: rgba(255, 255, 255, 0.8);
+   }
+ 
+   32.1%,
+   100% {
+     color: #ccc;
+     color: rgba(255, 255, 255, 0.4);
+   }
+ }
+ 
+ @keyframes galleryAnimation-4 {
+   0% {
+     opacity: 0;
+   }
+ 
+   7.1%,
+   25% {
+     opacity: 1;
+   }
+ 
+   32.1%,
+   100% {
+     opacity: 0;
+   }
+ }
+ 
+ .items-4.autoplay .control-button {
+   animation: controlAnimation-4 28s infinite;
+ }
+ .items-4.autoplay .item {
+   animation: galleryAnimation-4 28s infinite;
+ }
+ .items-4 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-4 .control-button:nth-of-type(1),
+ .items-4 .item:nth-of-type(1) {
+   animation-delay: -2s;
+ }
+ .items-4 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-4 .control-button:nth-of-type(2),
+ .items-4 .item:nth-of-type(2) {
+   animation-delay: 5s;
+ }
+ .items-4 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-4 .control-button:nth-of-type(3),
+ .items-4 .item:nth-of-type(3) {
+   animation-delay: 12s;
+ }
+ .items-4 .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-4 .control-button:nth-of-type(4),
+ .items-4 .item:nth-of-type(4) {
+   animation-delay: 19s;
+ }
+ 
+ @keyframes controlAnimation-5 {
+   0% {
+     color: #ccc;
+     color: rgba(255, 255, 255, 0.4);
+   }
+ 
+   5.7%,
+   20% {
+     color: white;
+     color: rgba(255, 255, 255, 0.8);
+   }
+ 
+   25.7%,
+   100% {
+     color: #ccc;
+     color: rgba(255, 255, 255, 0.4);
+   }
+ }
+ 
+ @keyframes galleryAnimation-5 {
+   0% {
+     opacity: 0;
+   }
+ 
+   5.7%,
+   20% {
+     opacity: 1;
+   }
+ 
+   25.7%,
+   100% {
+     opacity: 0;
+   }
+ }
+ 
+ .items-5.autoplay .control-button {
+   animation: controlAnimation-5 35s infinite;
+ }
+ .items-5.autoplay .item {
+   animation: galleryAnimation-5 35s infinite;
+ }
+ .items-5 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-5 .control-button:nth-of-type(1),
+ .items-5 .item:nth-of-type(1) {
+   animation-delay: -2s;
+ }
+ .items-5 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-5 .control-button:nth-of-type(2),
+ .items-5 .item:nth-of-type(2) {
+   animation-delay: 5s;
+ }
+ .items-5 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-5 .control-button:nth-of-type(3),
+ .items-5 .item:nth-of-type(3) {
+   animation-delay: 12s;
+ }
+ .items-5 .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-5 .control-button:nth-of-type(4),
+ .items-5 .item:nth-of-type(4) {
+   animation-delay: 19s;
+ }
+ .items-5 .control-operator:nth-of-type(5):target ~ .item:nth-of-type(5) {
+   pointer-events: auto;
+   opacity: 1;
+ }
+ .items-5 .control-button:nth-of-type(5),
+ .items-5 .item:nth-of-type(5) {
+   animation-delay: 26s;
+ }
+ 
+ /*
+     Theme controls how everything looks in Gallery CSS.
+ */
+ .gallery {
+   position: relative;
+ }
+ .gallery .item {
+   overflow: hidden;
+ }
+ .gallery .controls {
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   z-index: 2;
+   width: 100%;
+   margin-left: -50%;
+   text-align: center;
+ }
+ .gallery .control-button {
+   display: inline-block;
+   margin: 0 0.02em;
+   font-size: 3em;
+   color: #ccc;
+   color: rgba(255, 255, 255, 0.4);
+   text-align: center;
+   text-decoration: none;
+   transition: color 0.1s;
+ }
+ .gallery .control-button:hover {
+   color: white;
+   color: rgba(255, 255, 255, 0.8);
+ }
+ 
+ .introduction h2 {
+   font-family: 'Avenir LT W01 35 Light'; }
+ 
+ h2 {
+   font-family: 'Avenir LT W01 55 Roman'; }
+ 
+ h1 {
+   font-family: 'Avenir LT W01 85 Heavy'; }
+ 
+ body, .screencast .purchase, footer[role="contentinfo"] h3, footer[role="contentinfo"] p {
+   font-family: 'Proxima N W15 Reg'; }
+ 
+ .screencast .learnings p {
+   font-family: 'Proxima N W15 Smbd'; }
+ 
+ .screencast h3 {
+   font-family: 'Proxima N W15 Light'; }
+ 
+ .releases .download-options .filesize, .releases footer, .screencast .quotes cite {
+   font-family: 'ProximaNW15-CdLightIt'; }
+ 
+ .screencast .quotes {
+   font-family: 'Proxima N W15 Cd Reg'; }
+ 
+ @font-face {
+   font-family: "Layout";
+   src: url("../fonts/layout-webfont.eot?") format("eot");
+   src: url("../fonts/layout-webfont.woff") format("woff"), url("../fonts/layout-webfont.ttf") format("truetype"); }
+ 
+ @font-face {
+   font-family: 'icomoon';
+   src: url("../fonts/icomoon.eot");
+   src: url("../../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+   font-weight: normal;
+   font-style: normal; }
+ 
+ /* Use the following CSS code if you want to use data attributes for inserting your icons */
+ [data-icon]:before {
+   font-family: 'icomoon';
+   content: attr(data-icon);
+   speak: none;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased; }
+ 
+ [class*="icon-"]:before {
+   font-family: 'icomoon';
+   speak: none;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased; }
+ 
+ .icon-sass:before {
+   content: "\e000"; }
+ 
+ .icon-balloon:before {
+   content: "\e001"; }
+ 
+ .icon-transitions:before {
+   content: "\e002"; }
+ 
+ .icon-positioning:before {
+   content: "\e003"; }
+ 
+ .icon-css:before {
+   content: "\e004"; }
+ 
+ .icon-noscript:before {
+   content: "\e005";
+   font-size: 120%; }
+ 
+ .icon-prefixes:before {
+   content: "\e006";
+   font-size: 110%; }
+ 
+ .icon-animation:before {
+   content: "\e007"; }
+ 
+ .icon-tools:before {
+   content: "\e008"; }
+ 
+ .icon-clouds:before {
+   content: "\e009"; }
+ 
+ .icon-cloud:before {
+   content: "\e00a"; }
+ 
+ .icon-gallery:before {
+   content: "\e00b"; }
+ 
+ @keyframes sway {
+   from {
+     transform: rotate(3deg);
+     transform-origin: 50% 0%; }
+ 
+   to {
+     transform: rotate(-3deg); } }
+ 
+ @keyframes float {
+   from {
+     transform: translate3d(120%, 0, 0); }
+ 
+   to {
+     transform: translate3d(-60%, 0, 0); } }
+ 
+ * {
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility; }
+ 
+ body {
+   line-height: 1.5; }
+ 
+ a {
+   color: inherit; }
+ 
+ .gallery .ribbon {
+   position: absolute;
+   display: inline-block;
+   z-index: 3;
+   top: 0;
+   right: 0;
+   width: auto; }
+ .gallery .item {
+   height: 100%;
+   text-rendering: optimizeLegibility; }
+ .gallery .introduction {
+   background: #4D87E2;
+   text-align: center; }
+ .gallery .custom-controls {
+   background: #73C16F; }
+ .gallery .animations {
+   background: url(../images/background.jpg) no-repeat;
+   background-size: cover; }
+ .gallery header {
+   color: white;
+   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
+ 
+ .gallery .item:first-of-type {
+   position: absolute; }
+ 
+ .superfluous {
+   display: table;
+   height: 100%;
+   width: 100%; }
+ 
+ .introduction header {
+   display: table-cell;
+   vertical-align: middle; }
+ .introduction h1 {
+   margin: 0;
+   font-size: 3em;
+   letter-spacing: 3px; }
+ .introduction h2 {
+   margin: 0;
+   font-size: 1em;
+   color: rgba(255, 255, 255, 0.75); }
+ 
+ .gallery .custom-controls header {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+   padding: 0 25%;
+   font-size: .7em; }
+ 
+ .gallery .control-operator:nth-of-type(2):target ~ .secondary-controls {
+   display: block; }
+ 
+ .gallery .secondary-controls {
+   display: none;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 2;
+   pointer-events: none; }
+   .gallery .secondary-controls nav {
+     display: table-cell;
+     vertical-align: middle; }
+   .gallery .secondary-controls a {
+     pointer-events: auto;
+     height: 60px;
+     width: 60px;
+     border-radius: 60px;
+     color: rgba(255, 255, 255, 0.6);
+     font-size: 3em;
+     font-weight: bold;
+     text-decoration: none;
+     text-align: center;
+     background: rgba(0, 0, 0, 0.1);
+     transition: all .25s; }
+     .gallery .secondary-controls a:hover {
+       transform: scale(1.1); }
+   .gallery .secondary-controls a img {
+     margin-top: .1em; }
+   .gallery .secondary-controls a:nth-child(1) {
+     float: left;
+     margin-left: .2em; }
+   .gallery .secondary-controls a:nth-child(1) img {
+     margin-right: .1em; }
+   .gallery .secondary-controls a:nth-child(2) {
+     float: right;
+     margin-right: .2em; }
+   .gallery .secondary-controls a:nth-child(2) img {
+     margin-left: .1em; }
+ 
+ .gallery .animations header {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center; }
+   .gallery .animations header h1 {
+     position: relative;
+     z-index: 1; }
+ .gallery .animations h1 {
+   font-size: 2.5em;
+   font-weight: 600; }
+ .gallery .animations .balloon {
+   color: rgba(0, 0, 0, 0.9);
+   position: absolute;
+   width: 100px;
+   bottom: 20%; }
+   .gallery .animations .balloon:nth-of-type(1) {
+     font-size: 700%;
+     right: 40%; }
+   .gallery .animations .balloon:nth-of-type(2) {
+     font-size: 500%;
+     right: 20%;
+     -webkit-filter: blur(0.7px);
+     -moz-filter: blur(0.7px);
+     -ms-filter: blur(0.7px);
+     -o-filter: blur(0.7px);
+     filter: blur(0.7px); }
+     .gallery .animations .balloon:nth-of-type(2) .float, .gallery .animations .balloon:nth-of-type(2) .sway {
+       animation-delay: -2s; }
+   .gallery .animations .balloon:nth-of-type(3) {
+     font-size: 200%;
+     right: 80%;
+     bottom: 32%;
+     -webkit-filter: blur(2px);
+     -moz-filter: blur(2px);
+     -ms-filter: blur(2px);
+     -o-filter: blur(2px);
+     filter: blur(2px); }
+     .gallery .animations .balloon:nth-of-type(3) .float, .gallery .animations .balloon:nth-of-type(3) .sway {
+       animation-delay: -3.5s; }
+ .gallery .animations .sway {
+   animation: sway 3s ease-in-out infinite alternate; }
+ .gallery .animations .float {
+   animation: float 1.5m infinite; }
+ 
+ .share {
+   background: whiteSmoke;
+   border-bottom: 1px solid #cecece;
+   padding: 1em 0;
+   text-align: center; }
+   .share .share-button {
+     display: inline-block;
+     margin: 0 1em; }
+ 
+ .main-module header {
+   margin: 0 auto;
+   text-align: center; }
+ .main-module h1 {
+   display: inline-block;
+   margin: 2.5em 0 0 0;
+   font-size: 2em;
+   text-transform: uppercase;
+   letter-spacing: .2em;
+   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1); }
+ .main-module.coloured h1 {
+   color: white; }
+ .main-module.coloured h2 {
+   color: white;
+   color: rgba(255, 255, 255, 0.75); }
+ 
+ .getting-started {
+   color: #2b3e50; }
+   .getting-started h1 {
+     color: rgba(43, 62, 80, 0.8); }
+   .getting-started h2 {
+     font-size: 1.1em;
+     font-weight: 500;
+     color: rgba(43, 62, 80, 0.6); }
+   .getting-started .steps {
+     margin: 2em auto;
+     padding: 0;
+     list-style-position: inside; }
+   .getting-started .steps li {
+     margin: 2em 0; }
+   .getting-started .steps pre {
+     font-size: .9em; }
+ 
+ .releases {
+   display: table;
+   width: 100%;
+   padding-bottom: 3em;
+   text-align: center;
+   color: white;
+   background-color: #d36a6a; }
+   .releases .download-options {
+     width: 70%;
+     margin: 0 auto;
+     margin-top: 5em;
+     overflow: visible; }
+   .releases .download-options h3 {
+     margin: 0;
+     font-size: 2em;
+     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1); }
+   .releases .download-options .filesize {
+     margin: 0;
+     font-size: 1.2em;
+     font-weight: 600;
+     color: rgba(255, 255, 255, 0.6); }
+   .releases .prefixed,
+   .releases .unprefixed {
+     display: block;
+     margin-bottom: 2em;
+     text-decoration: none;
+     transition: all .25s; }
+     .releases .prefixed:hover,
+     .releases .unprefixed:hover {
+       transform: scale(1.025); }
+   .releases footer {
+     display: table-footer-group;
+     color: rgba(255, 255, 255, 0.6);
+     font-size: .8em; }
+   .releases footer a {
+     display: inline-block;
+     margin-top: 3em;
+     font-size: 1.2em;
+     text-decoration: none;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+     transition: all .25s ease-in-out; }
+     .releases footer a:hover {
+       color: white; }
+ 
+ .screencast {
+   color: white;
+   background-color: #61ba96; }
+   .screencast h3 {
+     display: inline-block;
+     font-size: 2em;
+     font-weight: 300;
+     padding-bottom: 0;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.6); }
+   .screencast .learnings {
+     text-align: center; }
+   .screencast .learnings ul {
+     padding: 0; }
+   .screencast .learnings li {
+     margin-top: 3em;
+     width: 50%;
+     display: inline-block;
+     vertical-align: top;
+     list-style-type: none; }
+   .screencast .learnings i {
+     font-size: 350%; }
+   .screencast .learnings p {
+     margin: 0;
+     font-size: .8em;
+     text-transform: uppercase;
+     letter-spacing: .1em; }
+   .screencast footer {
+     overflow: hidden;
+     clear: left; }
+   .screencast .quotes {
+     -webkit-font-smoothing: auto;
+     margin: 0;
+     overflow: hidden;
+     list-style-type: none;
+     text-align: left; }
+     .screencast .quotes .quote {
+       margin-bottom: 2em;
+       overflow: hidden;
+       clear: left; }
+     .screencast .quotes .avatar {
+       width: 55px;
+       border-radius: 55px;
+       float: left;
+       margin-right: 1em; }
+     .screencast .quotes cite {
+       font-style: normal;
+       display: block; }
+     .screencast .quotes .gallery {
+       min-height: 400px; }
+     .screencast .quotes .quote-body {
+       float: left;
+       width: 300px; }
+   .screencast .purchase {
+     position: relative; }
+     .screencast .purchase .superfluous {
+       background-color: white;
+       border-radius: 3px;
+       color: #61ba96;
+       box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1); }
+     .screencast .purchase header {
+       text-align: left;
+       padding: 1.2em 1.2em .7em 1.2em; }
+     .screencast .purchase h3 {
+       margin: 0;
+       border: 0;
+       width: 60%;
+       font-size: 1.4em;
+       line-height: 1.1;
+       color: #61ba96; }
+     .screencast .purchase .details {
+       margin: 0;
+       padding: 0;
+       font-size: .9em;
+       list-style-position: inside; }
+     .screencast .purchase .price {
+       float: right;
+       font-weight: 800;
+       font-size: 2.4em; }
+   .screencast .buy {
+     margin: .75em 0;
+     padding: .8em 0;
+     font-size: 1em;
+     font-weight: 600;
+     border-radius: 3px;
+     color: white;
+     text-align: center;
+     text-decoration: none;
+     background-color: #61ba96;
+     transition: all .25s ease-in-out;
+     display: none; }
+     .screencast .buy.selected {
+       display: block; }
+     .screencast .buy:hover {
+       box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1); }
+     .screencast .buy img {
+       display: inline-block;
+       vertical-align: text-top;
+       margin-right: .8em; }
+     .screencast .buy span {
+       float: none; }
+ 
+ footer[role="contentinfo"] .wrapper {
+   padding: 2em 0; }
+ footer[role="contentinfo"] .icon-gallery {
+   margin-right: .15em;
+   margin-top: -.2em;
+   float: left;
+   color: #61ba96;
+   font-size: 350%;
+   -webkit-filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.1));
+   -moz-filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.1));
+   -ms-filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.1));
+   -o-filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.1));
+   filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.1)); }
+ footer[role="contentinfo"] h3 {
+   font-size: .9em;
+   margin: 0; }
+ footer[role="contentinfo"] p {
+   font-size: .7em;
+   margin: 0; }
+   footer[role="contentinfo"] p a {
+     font-weight: 700; }
