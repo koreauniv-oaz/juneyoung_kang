@@ -22,14 +22,32 @@
                 <div class="navbar-collapse collapse w-75 order-1 order-md-0 dual-collapse2">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="" id="title">KAKAO FRIENDS</a>
+                            <a class="nav-link" href="index.php" id="title">KAKAO FRIENDS</a>
                         </li>
                     </ul>
                 </div>
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="" id="menu">카테고리</a>
+                            <div class="dropdown">
+                                <a class="nav-link" href="" id="menu">카테고리</a>
+                                <div class="dropdown-content">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-2" id="submenu">
+                                                <a href="#">전체 분류</a>
+                                                <a href="#">Link 1</a>
+                                                <a href="#">Link 2</a>
+                                                <a href="#">Link 3</a>
+                                            </div>
+                                            <div class="col-4" id="submenu">
+                                            </div>
+                                            <div class="col-6" id="submenu">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="" id="menu">스토리</a>
@@ -48,10 +66,21 @@
                 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <span style="font-size:1.5rem;"><i class="fa fa-search"></i></span>
+                            <span style="font-size:1.5rem;">
+                                <i class="fa fa-search"></i>
+                            </span>
                         </li>
                         <li class="nav-item">
-                            <span style="font-size:1.5rem;"><i class="fa fa-user"></i></span>
+                            <span style="font-size:1.5rem;">
+                                <div class="dropdown">
+                                    <i class="fa fa-user"><a class="nav-link" href="" id="menu"></a></i>
+                                    <div class="dropdown-content-user">
+                                        <a href="register.php">회원가입</a>
+                                        <a href="login.php">로그인</a>
+                                        <a href="#">마이페이지</a>
+                                    </div>
+                                </div>
+                            </span>
                         </li>
                         <li class="nav-item">
                             <span style="font-size:1.5rem;"><i class="fa fa-shopping-cart"></i></span>
@@ -203,6 +232,9 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <img src="assets/img/002.png" width="350" height="113">
+        </footer>
         <script src="assets/js/bootstrap.min.js"></script>
     </body>
 </html>
