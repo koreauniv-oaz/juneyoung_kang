@@ -2,6 +2,12 @@
 include('include/dbconfig.php'); 
 session_start();
 ?>
+
+<?php
+if(!isset($_SESSION['name'])){
+    header("Location: ./login.php");
+}
+?>
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -79,9 +85,8 @@ session_start();
                                 <div class="dropdown">
                                     <i class="fa fa-user"><a class="nav-link" href="" id="menu"></a></i>
                                     <div class="dropdown-content-user">
-                                        <a href="register.php">회원가입</a>
-                                        <a href="login.php">로그인</a>
-                                        <a href="#">마이페이지</a>
+                                        <?php if(!isset($_SESSION['name'])){ echo '<a href="register.php">회원가입</a><a href="login.php">로그인</a>';}?>
+                                        <?php if(isset($_SESSION['name'])){ echo '<a href="mypage.php">마이페이지</a>';}?>
                                     </div>
                                 </div>
                             </span>
@@ -97,7 +102,8 @@ session_start();
             </nav>
         </header>
         <section style="padding-top:200px;width:30%;">
-            <h2>님, 환영합니다.</h2>
+            <h2><?php echo $_SESSION['name'];?>님, 환영합니다.</h2>
+            <a href="logout.php">로그아웃</a>
         </section>
         <footer>
             <img src="assets/img/002.png" width="350" height="113" style="bottom:0; position: fixed;">

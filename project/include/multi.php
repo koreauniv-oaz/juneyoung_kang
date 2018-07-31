@@ -23,6 +23,8 @@ switch ((int) $_POST['cmd']) {
             $query = "select * from user where id = '$id' and pw = '$pw'";
             $row = mysqli_fetch_assoc($mysqli->query($query));
 
+            $_SESSION['name'] = $row['name'];
+
             if($row){
                 die('<script>alert("login complete"); location.href="../mypage.php";</script>');
             } else {
@@ -69,6 +71,5 @@ switch ((int) $_POST['cmd']) {
             die('<script>alert("complete"); location.href="../login.php";</script>');
         }
     break;
-    
 }
 ?>
