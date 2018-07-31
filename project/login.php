@@ -1,3 +1,7 @@
+<?php 
+include('include/dbconfig.php'); 
+session_start();
+?>
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -93,16 +97,17 @@
             </nav>
         </header>
         <section style="padding-top:200px;width:30%;">
-            <form>
+            <form method="post" action="include/multi.php">
                 <div class="form-group">
                     <label for="exampleInputEmail1">이메일</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일을 적어주세요">
+                    <input name="id" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일을 적어주세요">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">비밀번호</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호를 적어주세요">
+                    <input name="pw" type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호를 적어주세요">
                 </div>
+                <input type="hidden" name="cmd" value="0">
                 <button type="submit" class="btn btn-primary">로그인</button>
             </form>
         </section>

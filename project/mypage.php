@@ -97,27 +97,7 @@ session_start();
             </nav>
         </header>
         <section style="padding-top:200px;width:30%;">
-            <form method="post" action="include/multi.php">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">이름</label>
-                    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이름을 적어주세요">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">이메일</label>
-                    <input name="id" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일을 적어주세요">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">비밀번호</label>
-                    <input name="pw" type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호를 적어주세요">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">비밀번호 확인</label>
-                    <input name="pw_re" type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호를 다시 적어주세요">
-                </div>
-                <input type="hidden" name="cmd" value="1">
-                <button type="submit" class="btn btn-primary"><input type="hidden" name="submit">회원가입</button>
-            </form>
+            <h2>님, 환영합니다.</h2>
         </section>
         <footer>
             <img src="assets/img/002.png" width="350" height="113" style="bottom:0; position: fixed;">
